@@ -374,7 +374,7 @@ The website can be deployed to hosting services like:
 
 ## 🔗 Links
 
-- **Live Website:** https://christianenogm.github.io/explore-the-world/
+- **Live Website:** https://christianenogm.github.io/ExploreTheWorld/
 - **GitHub Repository:** https://github.com/christianenogm/explore-the-world
 - **Author:** [Christiane Nogueira Mendes](https://github.com/christianenogm)
 - **Course:** Fanshawe College - Web Development and Internet Applications
