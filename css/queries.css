@@ -1,0 +1,256 @@
+/* === GLOBAL STYLES === */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Move o elemento para baixo inicialmente */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Retorna à posição original */
+    }
+}
+
+/* === MEDIA QUERIES === */
+
+/* Tablet (iPad Air) - 820px and up */
+@media only screen and (min-width: 820px) {
+  
+  /* Header logo and title */
+  header .logo {
+    padding-top: 1rem;
+    display: flex;
+    float: left;
+    position: absolute;
+    width: 17rem;
+    margin: 1rem;
+  }
+
+  .title {
+    font-size: 4.5rem;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  /* Navigation bar */
+  nav {
+    background-color: white;
+    opacity: 99%;
+    padding: 0rem;
+    justify-content: center;
+  }
+
+  nav ul {
+    list-style: none;
+    font-size: 2.2rem;
+    display: flex;
+    background-color: #55bbf7d4;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 5rem; 
+  }
+
+  nav li {
+    margin: 0; 
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 1rem;
+    margin: 0rem;
+  }
+
+  nav a:focus,
+  nav a:hover {
+    text-decoration: underline;
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+  }
+
+  /* Main content styles */
+  .intro h2, 
+  .intro p, 
+  .contact-intro h2, 
+  .contact-intro p, 
+  .contact p,
+  .contact h3 {
+    font-size: 2.2rem;
+    padding: 1rem;
+    text-align: left;
+  }
+
+  /* Carousel styles */
+  .carousel {
+    width: 100%;
+    height: 45rem;
+    max-width: none;
+  }
+
+  /* gallery styles */
+  .gallery {
+    display: inline-block; 
+  }
+
+  /* travel destination styles */
+  .travel-destination {
+    margin: 2.5rem;
+    display: inline-block; 
+  }
+
+  .travel-destination h3 {
+    font-size: 3rem;
+  }
+
+  .travel-destination p {
+    font-size: 2.5rem;
+  }
+
+  /* button styles */
+  button {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  /* about section styles */
+  .about-logo {
+    display: block;
+    opacity: 99%;
+    float: left;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    width: 20rem;
+  }
+
+  .about-text {
+    font-size: 2.5rem;
+  }
+
+  .video-about {
+    font-size: 2rem;
+  }
+
+  /* social media section */
+  .social-media h3 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  /* social media and contacts styles */
+  .social-media, 
+  .contact-form-container h3, 
+  .contact-form{
+    font-size: 2.2rem;
+  }
+
+  /* contact form styles */
+  .contact-form {
+    width: 55%;
+  }
+
+  .form-group {
+    margin: 1rem;
+  }
+
+  .form-group label {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    float: left;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 3.5rem;
+    width: 100%; 
+    float: right;
+
+  }
+
+  form input,
+  form textarea {
+    font-size: 2.5rem;
+    width: 100%; 
+  
+  }
+}
+
+/* Desktop (1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  /* intro and contact-intro styles */
+  .intro h2, 
+  .intro p, 
+  .contact-intro h2, 
+  .contact-intro p, 
+  .contact p,
+  .contact h3 {
+    font-size: 2.2rem;
+  }
+
+  /* travel destination styles */
+  .travel-destination {  
+    width: 39rem;
+    margin: 1.6rem;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    box-shadow: none;  
+    height: auto;
+  }
+
+  .travel-destination img {
+    float: none; 
+    margin-top: 1rem;
+    width: 90%; 
+    height: 20rem; 
+    object-fit: cover; 
+    border-radius: 10px; 
+  }
+
+  .travel-destination h3 {
+    font-size: 2.5rem; 
+    margin: 1rem 0;
+  }
+
+  .travel-destination p {
+    font-size: 1.8rem; 
+    margin: 0.5rem 0;
+  }
+
+  .travel-destination button {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .travel-destination button:hover {
+    background-color: #023e8a;
+  }
+
+  /* about section styles */
+  .about-text {
+    font-size: 2rem;  
+  }
+
+  /* Floating elements in the footer */
+  .left {
+    float: left;
+    margin-top: -2rem;
+    margin-left: 2rem;
+  }
+
+  .right {
+    float: right;
+    margin-top: -2rem;
+    margin-right: 2rem;
+  }   
+}
